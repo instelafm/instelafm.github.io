@@ -1,26 +1,58 @@
- <!doctype html>
 
-<html lang="tr">
+<!doctype html>
+<html>
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
+<title>instela.fm yedek</title>
+<meta name="description" content="instela.fm yedek">
+<meta name="author" content="thedewil">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://hostingshoutcast.com/player/radiodemo/css/icast.min.css" rel="stylesheet" type="text/css">
+<link href="https://hostingshoutcast.com/player/radiodemo/demo_files/demo.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<meta property="og:title" content="Radio Pescara"/>
+    <meta property="og:site_name" content="Radio Pescara"/>
+    <meta property="og:url" content="https://hostingshoutcast.com/player/radiopescara/"/>
+    <meta property="og:description" content="Radio Pescara"/>
+    <meta property="og:image" content="https://hostingshoutcast.com/player/radiopescara/img/img.png"/>
+    <meta property="og:type" content="website"/>
+    <meta property="fb:app_id" content="605204202961411"/>
 
-  <title>instela.fm yedek</title>
-  <meta name="description" content="instela.fm yedek">
-  <meta name="author" content="thedewil">
+    <meta name="twitter:card" content="player"/>
+    <meta name="twitter:title" content="Radio Pescara"/>
+    <meta name="twitter:description" content="https://hostingshoutcast.com/player/radiopescara/"/>
+    <meta name="twitter:image" content="https://hostingshoutcast.com/player/radiopescara/img/img.png"/>
 
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta itemscope itemtype="http://schema.org/Article" />
+    <meta itemprop="headline" content="Radio Pescara"/>
+    <meta itemprop="description" content="Radio Pescara"/>
+    <meta itemprop="image" content="https://hostingshoutcast.com/player/radiopescara/img/img.png"/>
+    <meta property="og:image" content="https://hostingshoutcast.com/player/radiopescara/img/logo2.jpg" />
+        <div id='hidden' style='display:none;'><img src="https://hostingshoutcast.com/player/radiopescara/img/logo2.jpg"></div>
 </head>
-
 <body>
 
-  <center><img src="http://cdn-radiotime-logos.tunein.com/s235145q.png"></br></center>
-  <center><iframe src="http://tunein.com/embed/player/s235145/" style="width:520px;height:100px;" scrolling="no" frameborder="no"></iframe></center></br></center>
-  <center><a class="twitter-timeline" href="https://twitter.com/instelafm" data-widget-id="663473195442429954">Tweets by @instelafm</a></center>
+
+		<div class="icast" id="stream1"></div>
+ <center><a class="twitter-timeline" href="https://twitter.com/instelafm" data-widget-id="663473195442429954">Tweets by @instelafm</a></center>
   <center><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></center>
+	
+
+
+<script src="js/icast.min.js"></script>
+<script>
+    $("#stream1").icast({
+	    URL: "https://ssl5.azotosolutions.com:1044",
+		version: "2",               
+                show_listeners:	false,
+                autoplay: true,
   
+ logo:	           "img/radioLogo.jpg",
+    })
+</script>
+
+
+
 
 </body>
 </html>
